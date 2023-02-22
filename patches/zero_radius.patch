@@ -1,0 +1,1113 @@
+--- gtk-4.0/gtk.css	2023-02-22 01:12:02.187703102 +0100
++++ gtk-4.0/gtk.css	2023-02-22 01:16:18.220777790 +0100
+@@ -75,7 +75,7 @@
+ }
+ 
+ iconview:hover, iconview:selected {
+-  border-radius: 3px;
++  border-radius: 0;
+ }
+ 
+ rubberband, .content-view rubberband, .content-view columnview.view > rubberband,
+@@ -88,7 +88,7 @@
+ 
+ flowbox > flowboxchild {
+   padding: 4px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ .content-view .tile:selected {
+@@ -129,7 +129,7 @@
+ }
+ 
+ label.osd {
+-  border-radius: 6px;
++  border-radius: 0;
+   background-color: rgba(11, 11, 18, 0.9);
+   color: #FFFFFF;
+ }
+@@ -223,7 +223,7 @@
+   color: #FFFFFF;
+   background-color: #1e1e2e;
+   background-clip: padding-box;
+-  border-radius: 6px;
++  border-radius: 0;
+   border: none;
+   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+ }
+@@ -234,7 +234,7 @@
+ }
+ 
+ .osd.circular {
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ /*********************
+@@ -271,7 +271,7 @@
+   min-height: 36px;
+   padding: 0 8px;
+   border-spacing: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+   caret-color: currentColor;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), outline 300ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
+   box-shadow: inset 0 0 0 2px transparent;
+@@ -688,7 +688,7 @@
+ 
+ .entry-tag {
+   margin: 2px;
+-  border-radius: 9999px;
++  border-radius: 0;
+   box-shadow: none;
+   background-color: rgba(255, 255, 255, 0.12);
+   color: #FFFFFF;
+@@ -943,14 +943,14 @@
+   min-height: 24px;
+   min-width: 24px;
+   padding: 0;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ button {
+   min-height: 24px;
+   min-width: 16px;
+   padding: 6px 10px;
+-  border-radius: 6px;
++  border-radius: 0;
+   font-weight: 500;
+ }
+ 
+@@ -983,7 +983,7 @@
+ button.text-button.image-button, button.image-text-button {
+   min-width: 24px;
+   padding: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ button.text-button.image-button > box,
+@@ -1039,7 +1039,7 @@
+ 
+ menubutton.pill > button, button.pill {
+   padding: 9px 30px;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ button.card {
+@@ -1265,7 +1265,7 @@
+ }
+ 
+ windowcontrols button:not(.suggested-action):not(.destructive-action), filechooser #pathbarbox > stack > box > button, menubutton.circular > button, button.close, button.circular {
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ windowcontrols button:not(.suggested-action):not(.destructive-action) label, filechooser #pathbarbox > stack > box > button label, menubutton.circular > button label, button.close label, button.circular label {
+@@ -1293,11 +1293,11 @@
+ }
+ 
+ menubutton.suggested-action, menubutton.destructive-action, menubutton.opaque {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ menubutton.suggested-action.circular, menubutton.suggested-action.pill, menubutton.destructive-action.circular, menubutton.destructive-action.pill, menubutton.opaque.circular, menubutton.opaque.pill {
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ menubutton.suggested-action > button, menubutton.suggested-action > button:checked, menubutton.destructive-action > button, menubutton.destructive-action > button:checked, menubutton.opaque > button, menubutton.opaque > button:checked {
+@@ -1337,7 +1337,7 @@
+ }
+ 
+ splitbutton {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ splitbutton, splitbutton > separator {
+@@ -1403,7 +1403,7 @@
+ 
+ splitbutton.flat > button,
+ splitbutton.flat > menubutton > button {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ splitbutton.suggested-action {
+@@ -1480,17 +1480,17 @@
+ }
+ 
+ .linked:not(.vertical) > entry:first-child, .linked:not(.vertical) > button:first-child {
+-  border-top-left-radius: 6px;
+-  border-bottom-left-radius: 6px;
++  border-top-left-radius: 0;
++  border-bottom-left-radius: 0;
+ }
+ 
+ .linked:not(.vertical) > entry:last-child, .linked:not(.vertical) > button:last-child {
+-  border-top-right-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-top-right-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ .linked:not(.vertical) > entry:only-child, .linked:not(.vertical) > button:only-child {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ .linked.vertical > entry, .linked.vertical > button, .linked.vertical > button.image-button {
+@@ -1498,17 +1498,17 @@
+ }
+ 
+ .linked.vertical > entry:first-child, .linked.vertical > button:first-child {
+-  border-top-left-radius: 6px;
+-  border-top-right-radius: 6px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
+ }
+ 
+ .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
+-  border-bottom-left-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-bottom-left-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ .linked.vertical > entry:only-child, .linked.vertical > button:only-child {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ button.color {
+@@ -1582,7 +1582,7 @@
+  * GtkSpinButton *
+  *****************/
+ spinbutton {
+-  border-radius: 6px;
++  border-radius: 0;
+   padding: 0;
+   border-spacing: 0;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), outline 300ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
+@@ -1655,7 +1655,7 @@
+ }
+ 
+ cell.activatable spinbutton:not(.vertical) > button:last-child {
+-  border-radius: 0 6px 6px 0;
++  border-radius: 0;
+ }
+ 
+ cell.activatable spinbutton:not(.vertical) > button.up:dir(ltr), cell.activatable spinbutton:not(.vertical) > button.down:dir(rtl) {
+@@ -1748,7 +1748,7 @@
+ 
+ dropdown > .linked:not(.vertical) > entry:not(:only-child),
+ combobox > .linked:not(.vertical) > entry:not(:only-child) {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ dropdown > .linked:not(.vertical) > entry:not(:only-child):first-child,
+@@ -1769,7 +1769,7 @@
+   min-width: 16px;
+   margin: 6px;
+   padding: 4px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ .linked:not(.vertical) > combobox:not(:first-child) > box > button.combo {
+@@ -1793,7 +1793,7 @@
+ }
+ 
+ button.combo:only-child {
+-  border-radius: 6px;
++  border-radius: 0;
+   font-weight: normal;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), outline 300ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
+   box-shadow: inset 0 0 0 2px transparent;
+@@ -1850,7 +1850,7 @@
+ .app-notification, .toolbar.osd {
+   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+   padding: 6px;
+-  border-radius: 12px;
++  border-radius: 0;
+   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+   background-color: #313244;
+   color: #FFFFFF;
+@@ -2095,7 +2095,7 @@
+ }
+ 
+ headerbar .linked:not(.vertical) > entry:not(:only-child) {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ headerbar .entry-tag {
+@@ -2192,7 +2192,7 @@
+ pathbar > button {
+   padding-left: 6px;
+   padding-right: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+   background-color: alpha(currentColor, 0.08);
+   border: none;
+   box-shadow: none;
+@@ -2232,7 +2232,7 @@
+   background-color: rgba(255, 255, 255, 0.04);
+   color: rgba(255, 255, 255, 0.7);
+   border: none;
+-  border-radius: 6px;
++  border-radius: 0;
+   padding: 2px;
+ }
+ 
+@@ -2247,7 +2247,7 @@
+   margin-top: 0;
+   margin-bottom: 0;
+   min-height: 20px;
+-  border-radius: 4px;
++  border-radius: 0;
+   border: none;
+   box-shadow: none;
+ }
+@@ -2475,7 +2475,7 @@
+ 
+ menubar > item popover.menu.background popover.menu.background > contents {
+   margin: 0;
+-  border-radius: 12px;
++  border-radius: 0;
+ }
+ 
+ /**********************
+@@ -2546,7 +2546,7 @@
+   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+   padding: 6px;
+   background-color: #313244;
+-  border-radius: 12px;
++  border-radius: 0;
+   color: #FFFFFF;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   background-clip: border-box;
+@@ -2571,7 +2571,7 @@
+ }
+ 
+ popover > contents list > row {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ popover > contents stack > box {
+@@ -2600,7 +2600,7 @@
+   padding: 3px 9px;
+   color: #FFFFFF;
+   font: initial;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ popover modelbutton:focus:not(:hover) {
+@@ -2648,7 +2648,7 @@
+   border: none;
+   background-clip: padding-box;
+   font-weight: 500;
+-  border-radius: 6px;
++  border-radius: 0;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), border-image 225ms cubic-bezier(0, 0, 0.2, 1), background-size 300ms cubic-bezier(0, 0, 0.2, 1), background-image 1200ms cubic-bezier(0, 0, 0.2, 1), outline 300ms cubic-bezier(0, 0, 0.2, 1);
+   background-image: radial-gradient(circle, transparent 10%, transparent 0%);
+   background-repeat: no-repeat;
+@@ -2698,23 +2698,23 @@
+ 
+ notebook, notebook.frame {
+   background-color: #1e1e2e;
+-  border-radius: 12px;
++  border-radius: 0;
+ }
+ 
+ notebook.frame frame > border {
+   border: none;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ notebook.frame frame > list row.activatable {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ notebook > header {
+   border: none;
+   background-color: rgba(255, 255, 255, 0.04);
+   margin: 3px;
+-  border-radius: 9px;
++  border-radius: 0;
+ }
+ 
+ notebook > header.top > tabs > arrow {
+@@ -2766,7 +2766,7 @@
+ notebook > header > tabs > arrow {
+   min-height: 16px;
+   min-width: 16px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ notebook > header > tabs > tab {
+@@ -2850,7 +2850,7 @@
+ 
+ notebook > stack:not(:only-child) {
+   background-color: transparent;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ tabbar > revealer > box {
+@@ -3028,7 +3028,7 @@
+   margin: 0;
+   min-width: 24px;
+   min-height: 24px;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ tabbar tab button.image-button.tab-close-button,
+@@ -3079,7 +3079,7 @@
+   min-width: 8px;
+   min-height: 8px;
+   border: 4px solid transparent;
+-  border-radius: 9999px;
++  border-radius: 0;
+   background-clip: padding-box;
+   background-color: rgba(255, 255, 255, 0.5);
+   box-shadow: none;
+@@ -3132,7 +3132,7 @@
+   min-height: 4px;
+   margin: 3px;
+   border: 1px solid rgba(30, 30, 46, 0.3);
+-  border-radius: 9999px;
++  border-radius: 0;
+   background-color: rgba(255, 255, 255, 0.5);
+   background-clip: padding-box;
+   -gtk-icon-source: none;
+@@ -3201,7 +3201,7 @@
+   margin: 6px 0;
+   padding: 0;
+   border: none;
+-  border-radius: 9999px;
++  border-radius: 0;
+   background-color: rgba(255, 255, 255, 0.5);
+   background-clip: border-box;
+   font-size: 0;
+@@ -3225,7 +3225,7 @@
+   min-width: 18px;
+   min-height: 18px;
+   margin: 3px;
+-  border-radius: 9999px;
++  border-radius: 0;
+   outline: none;
+   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+   background-color: white;
+@@ -3278,7 +3278,7 @@
+   min-width: 20px;
+   margin: 3px;
+   padding: 0;
+-  border-radius: 9999px;
++  border-radius: 0;
+   border: none;
+   color: transparent;
+   background-color: rgba(255, 255, 255, 0.12);
+@@ -3527,7 +3527,7 @@
+   min-width: 18px;
+   margin: -8px;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+-  border-radius: 9999px;
++  border-radius: 0;
+   color: #89b4fa;
+   background-color: #1e1e2e;
+   box-shadow: inset 0 0 0 2px #89b4fa;
+@@ -3630,7 +3630,7 @@
+   min-height: 32px;
+   min-width: 32px;
+   margin: -15px;
+-  border-radius: 50%;
++  border-radius: 0;
+   background-size: auto, 1000% 1000%;
+   background-repeat: no-repeat;
+   background-position: center center;
+@@ -3675,7 +3675,7 @@
+   min-height: 32px;
+   min-width: 32px;
+   margin: -15px;
+-  border-radius: 50%;
++  border-radius: 0;
+   background-size: auto, 1000% 1000%;
+   background-repeat: no-repeat;
+   background-position: center center;
+@@ -3720,7 +3720,7 @@
+   min-height: 32px;
+   min-width: 32px;
+   margin: -15px;
+-  border-radius: 50%;
++  border-radius: 0;
+   background-size: auto, 1000% 1000%;
+   background-repeat: no-repeat;
+   background-position: center center;
+@@ -3765,7 +3765,7 @@
+   min-height: 32px;
+   min-width: 32px;
+   margin: -15px;
+-  border-radius: 50%;
++  border-radius: 0;
+   background-size: auto, 1000% 1000%;
+   background-repeat: no-repeat;
+   background-position: center center;
+@@ -3856,12 +3856,12 @@
+ }
+ 
+ progressbar trough {
+-  border-radius: 6px;
++  border-radius: 0;
+   background-color: rgba(255, 255, 255, 0.12);
+ }
+ 
+ progressbar progress {
+-  border-radius: 6px;
++  border-radius: 0;
+   background-color: #89b4fa;
+ }
+ 
+@@ -3914,7 +3914,7 @@
+ }
+ 
+ levelbar trough {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ levelbar block.low {
+@@ -3969,7 +3969,7 @@
+ 
+ frame.view,
+ .frame.view {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ frame.flat,
+@@ -3978,7 +3978,7 @@
+ }
+ 
+ frame {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ frame > label {
+@@ -4081,7 +4081,7 @@
+  *********/
+ list.content,
+ list.boxed-list {
+-  border-radius: 7px;
++  border-radius: 0;
+   box-shadow: none;
+   border: 1px solid rgba(255, 255, 255, 0.12);
+ }
+@@ -4122,7 +4122,7 @@
+ }
+ 
+ list.frame {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ listview.view {
+@@ -4132,13 +4132,13 @@
+ 
+ popover.menu listview.view {
+   padding: 0;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ popover.menu listview.view > row {
+   margin-left: 0;
+   margin-right: 0;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ row {
+@@ -4474,8 +4474,8 @@
+ list.content > row:first-child, list.content > row:first-child.expander row.header,
+ list.boxed-list > row:first-child,
+ list.boxed-list > row:first-child.expander row.header {
+-  border-top-left-radius: 6px;
+-  border-top-right-radius: 6px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
+ }
+ 
+ list.content > row:last-child, list.content > row:last-child.expander:not(:checked), list.content > row:last-child.expander:not(:checked) row.header, list.content > row:last-child.expander:checked list.nested, list.content > row:last-child.expander:checked list.nested > row:last-child,
+@@ -4484,8 +4484,8 @@
+ list.boxed-list > row:last-child.expander:not(:checked) row.header,
+ list.boxed-list > row:last-child.expander:checked list.nested,
+ list.boxed-list > row:last-child.expander:checked list.nested > row:last-child {
+-  border-bottom-left-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-bottom-left-radius: 0;
++  border-bottom-right-radius: 0;
+   border-bottom-width: 0;
+ }
+ 
+@@ -4579,7 +4579,7 @@
+ }
+ 
+ expander-widget > box > title {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ expander-widget > box > title:hover > expander {
+@@ -4602,7 +4602,7 @@
+ calendar {
+   padding: 0;
+   border: 1px solid rgba(255, 255, 255, 0.12);
+-  border-radius: 6px;
++  border-radius: 0;
+   color: #FFFFFF;
+ }
+ 
+@@ -4611,7 +4611,7 @@
+ }
+ 
+ calendar:selected {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ calendar > header {
+@@ -4628,7 +4628,7 @@
+ }
+ 
+ calendar > grid > label {
+-  border-radius: 6px;
++  border-radius: 0;
+   margin: 0;
+ }
+ 
+@@ -4660,15 +4660,15 @@
+ }
+ 
+ window.messagedialog .response-area > box > button:first-child, window.dialog.message .dialog-action-area > button:first-child {
+-  border-radius: 0 0 0 12px;
++  border-radius: 0;
+ }
+ 
+ window.messagedialog .response-area > box > button:last-child, window.dialog.message .dialog-action-area > button:last-child {
+-  border-radius: 0 0 12px 0;
++  border-radius: 0;
+ }
+ 
+ window.messagedialog .response-area > box > button:only-child, window.dialog.message .dialog-action-area > button:only-child {
+-  border-radius: 0 0 12px 12px;
++  border-radius: 0;
+ }
+ 
+ window.dialog.message.background {
+@@ -4725,7 +4725,7 @@
+ }
+ 
+ window.aboutdialog.background.csd scrolledwindow.frame, window.aboutdialog.background.csd scrolledwindow.frame > viewport.view, window.aboutdialog.background.csd scrolledwindow.frame > textview.view, window.aboutdialog.background.csd scrolledwindow.frame > textview.view > text {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ /********************
+@@ -4750,7 +4750,7 @@
+ }
+ 
+ window.messagedialog.csd:not(.solid-csd) {
+-  border-radius: 12px;
++  border-radius: 0;
+ }
+ 
+ window.messagedialog.csd:not(.solid-csd) .response-area > box.horizontal > button {
+@@ -4771,8 +4771,8 @@
+ }
+ 
+ window.messagedialog.csd:not(.solid-csd) .response-area > box.vertical > button:last-child {
+-  border-bottom-left-radius: 12px;
+-  border-bottom-right-radius: 12px;
++  border-bottom-left-radius: 0;
++  border-bottom-right-radius: 0;
+   margin-bottom: 0;
+ }
+ 
+@@ -4838,7 +4838,7 @@
+ stacksidebar row {
+   min-height: 24px;
+   padding: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ stacksidebar row:selected {
+@@ -4889,7 +4889,7 @@
+ .navigation-sidebar > row {
+   min-height: 24px;
+   padding: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+   margin: 1.5px 6px;
+ }
+ 
+@@ -5032,13 +5032,13 @@
+  ************/
+ video {
+   background: black;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ video image.osd {
+   min-width: 64px;
+   min-height: 64px;
+-  border-radius: 9999px;
++  border-radius: 0;
+   border: none;
+ }
+ 
+@@ -5125,7 +5125,7 @@
+   background-color: rgba(11, 11, 18, 0.9);
+   color: #FFFFFF;
+   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+-  border-radius: 6px;
++  border-radius: 0;
+   margin: 2px 6px 8px 6px;
+ }
+ 
+@@ -5137,43 +5137,43 @@
+  * Color Chooser *
+  *****************/
+ colorswatch.top {
+-  border-top-left-radius: 6px;
+-  border-top-right-radius: 6px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
+ }
+ 
+ colorswatch.top overlay {
+-  border-top-left-radius: 6px;
+-  border-top-right-radius: 6px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
+ }
+ 
+ colorswatch.bottom {
+-  border-bottom-left-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-bottom-left-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ colorswatch.bottom overlay {
+-  border-bottom-left-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-bottom-left-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ colorswatch.left, colorswatch:first-child:not(.top) {
+-  border-top-left-radius: 6px;
+-  border-bottom-left-radius: 6px;
++  border-top-left-radius: 0;
++  border-bottom-left-radius: 0;
+ }
+ 
+ colorswatch.left overlay, colorswatch:first-child:not(.top) overlay {
+-  border-top-left-radius: 6px;
+-  border-bottom-left-radius: 6px;
++  border-top-left-radius: 0;
++  border-bottom-left-radius: 0;
+ }
+ 
+ colorswatch.right, colorswatch:last-child:not(.bottom) {
+-  border-top-right-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-top-right-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ colorswatch.right overlay, colorswatch:last-child:not(.bottom) overlay {
+-  border-top-right-radius: 6px;
+-  border-bottom-right-radius: 6px;
++  border-top-right-radius: 0;
++  border-bottom-right-radius: 0;
+ }
+ 
+ colorswatch.dark {
+@@ -5190,12 +5190,12 @@
+ }
+ 
+ colorswatch#add-color-button {
+-  border-radius: 6px 0 0 6px;
++  border-radius: 0;
+   color: #FFFFFF;
+ }
+ 
+ colorswatch#add-color-button:only-child {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ colorswatch#add-color-button overlay {
+@@ -5220,11 +5220,11 @@
+ }
+ 
+ colorswatch#editor-color-sample {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ colorswatch#editor-color-sample overlay {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ colorswatch#editor-color-sample overlay:hover {
+@@ -5233,7 +5233,7 @@
+ 
+ colorchooser .popover.osd {
+   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
+-  border-radius: 6px;
++  border-radius: 0;
+   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15), 0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
+   background-color: #313244;
+ }
+@@ -5257,7 +5257,7 @@
+ }
+ 
+ window.csd {
+-  border-radius: 12px;
++  border-radius: 0;
+   outline-offset: -1px;
+   outline: 1px solid rgba(255, 255, 255, 0.1);
+   margin: 0;
+@@ -5414,7 +5414,7 @@
+   padding-left: 8px;
+   padding-right: 8px;
+   border: solid 1px rgba(255, 255, 255, 0.12);
+-  border-radius: 7px;
++  border-radius: 0;
+   box-shadow: inset 0 -2px rgba(255, 255, 255, 0.12);
+   background-color: #313244;
+   color: #FFFFFF;
+@@ -5429,7 +5429,7 @@
+   min-height: 0;
+   padding: 3px;
+   margin: 6px 0;
+-  border-radius: 9px;
++  border-radius: 0;
+   background-color: rgba(255, 255, 255, 0.04);
+   border: none;
+ }
+@@ -5437,7 +5437,7 @@
+ stackswitcher.linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action) {
+   margin: 0 0;
+   background-color: transparent;
+-  border-radius: 6px;
++  border-radius: 0;
+   padding: 3px 10px;
+ }
+ 
+@@ -5527,7 +5527,7 @@
+ button.emoji-section {
+   margin: 0;
+   padding: 6px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ button.emoji-section:checked {
+@@ -5538,7 +5538,7 @@
+   font-size: x-large;
+   padding: 6px;
+   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ popover.emoji-picker emoji:focus, popover.emoji-picker emoji:hover {
+@@ -5574,7 +5574,7 @@
+   padding: 0;
+   margin: 6px;
+   border-style: none;
+-  border-radius: 6px;
++  border-radius: 0;
+   background-color: #89b4fa;
+   color: rgba(0, 0, 0, 0.87);
+   box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+@@ -5605,13 +5605,13 @@
+ 
+ #NautilusPathBar {
+   background-color: rgba(255, 255, 255, 0.04);
+-  border-radius: 6px;
++  border-radius: 0;
+   margin: 6px 0;
+ }
+ 
+ #NautilusPathButton {
+   margin: 0 3px;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ #NautilusPathButton.current-dir {
+@@ -5716,13 +5716,13 @@
+ }
+ 
+ popover.events box {
+-  border-top-left-radius: 6px;
+-  border-top-right-radius: 6px;
++  border-top-left-radius: 0;
++  border-top-right-radius: 0;
+ }
+ 
+ popover.events list {
+   background-color: #1e1e2e;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ popover.events scrolledwindow {
+@@ -5730,7 +5730,7 @@
+ }
+ 
+ popover.events button {
+-  border-radius: 6px;
++  border-radius: 0;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   border-style: solid none none;
+@@ -5747,22 +5747,22 @@
+ }
+ 
+ event.timed, event:not(.slanted):not(.slanted-start):not(.slanted-end) {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ event.timed widget.edge {
+-  border-radius: 3px;
++  border-radius: 0;
+   min-width: 5px;
+ }
+ 
+ event.slanted-start, event.slanted-end:dir(rtl) {
+   padding-left: 16px;
+-  border-radius: 0 3px 3px 0;
++  border-radius: 0;
+ }
+ 
+ event.slanted-end, event.slanted-start:dir(rtl) {
+   padding-right: 16px;
+-  border-radius: 3px 0 0 3px;
++  border-radius: 0;
+ }
+ 
+ event:not(.timed).color-dark {
+@@ -5789,7 +5789,7 @@
+ }
+ 
+ .calendar-list > list {
+-  border-radius: 4px;
++  border-radius: 0;
+ }
+ 
+ .sources-button {
+@@ -5851,7 +5851,7 @@
+ 
+ datechooser button.day dot {
+   background-color: #FFFFFF;
+-  border-radius: 50%;
++  border-radius: 0;
+   min-height: 3px;
+   min-width: 3px;
+ }
+@@ -6013,7 +6013,7 @@
+ }
+ 
+ .notes-section box > textview {
+-  border-radius: 6px;
++  border-radius: 0;
+   padding: 6px;
+ }
+ 
+@@ -6045,7 +6045,7 @@
+ datechooser .current-week {
+   background: alpha(#11111b, 0.7);
+   color: #FFFFFF;
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ menubutton stack > box {
+@@ -6096,7 +6096,7 @@
+ 
+ .origin-rounded-box {
+   background-color: rgba(255, 255, 255, 0.12);
+-  border-radius: 9999px;
++  border-radius: 0;
+   padding: 4px;
+ }
+ 
+@@ -6111,7 +6111,7 @@
+ button.card.category-tile {
+   padding: 21px;
+   border: none;
+-  border-radius: 6px;
++  border-radius: 0;
+   min-width: 140px;
+   font-weight: 900;
+   font-size: larger;
+@@ -6369,7 +6369,7 @@
+ 
+ .upgrade-banner {
+   padding: 0px;
+-  border-radius: 6px;
++  border-radius: 0;
+   border: none;
+ }
+ 
+@@ -6460,7 +6460,7 @@
+ }
+ 
+ app-context-bar > box:not(:first-child) > button.flat:last-child {
+-  border-radius: 0 6px 6px 0;
++  border-radius: 0;
+ }
+ 
+ app-context-bar > box:first-child > button.flat {
+@@ -6468,7 +6468,7 @@
+ }
+ 
+ app-context-bar > box:first-child > button.flat:first-child {
+-  border-radius: 6px 0 0 6px;
++  border-radius: 0;
+ }
+ 
+ app-context-bar > box > button.flat {
+@@ -6486,7 +6486,7 @@
+   padding: 6px;
+   font-size: 18px;
+   font-weight: bold;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ .context-tile-lozenge.large {
+@@ -6660,8 +6660,8 @@
+ }
+ 
+ .forecast-card {
+-  transition: border-radius 100ms ease-out;
+-  border-radius: 6px;
++  transition: border-radius 0;
++  border-radius: 0;
+ }
+ 
+ .forecast-card separator {
+@@ -6714,7 +6714,7 @@
+ }
+ 
+ button.osd.circular {
+-  border-radius: 9999px;
++  border-radius: 0;
+   min-width: 24px;
+   min-height: 24px;
+ }
+@@ -6746,7 +6746,7 @@
+   min-width: 36px;
+   min-height: 36px;
+   padding: 0;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ .large-button {
+@@ -6836,7 +6836,7 @@
+ .clock-time {
+   font-size: 2em;
+   padding: 0.2em 0.5em;
+-  border-radius: 1em;
++  border-radius: 0;
+ }
+ 
+ .none .clock-time {
+@@ -6926,7 +6926,7 @@
+ }
+ 
+ .style-variant button.toggle > stylevariantpreview > .wallpaper {
+-  border-radius: 6px;
++  border-radius: 0;
+   outline-color: transparent;
+   outline-width: 3px;
+   outline-offset: 3px;
+@@ -6965,7 +6965,7 @@
+ }
+ 
+ avatar {
+-  border-radius: 9999px;
++  border-radius: 0;
+   font-weight: bold;
+ }
+ 
+@@ -7048,7 +7048,7 @@
+ }
+ 
+ .card {
+-  border-radius: 6px;
++  border-radius: 0;
+   border: 1px solid rgba(255, 255, 255, 0.12);
+   background-clip: border-box;
+   color: rgba(255, 255, 255, 0.7);
+@@ -7083,7 +7083,7 @@
+ toast {
+   margin: 12px;
+   margin-bottom: 24px;
+-  border-radius: 9999px;
++  border-radius: 0;
+   border-spacing: 6px;
+   padding: 6px;
+   box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 10px 0 rgba(0, 0, 0, 0.1), inset 0 1px rgba(255, 255, 255, 0.1);
+@@ -7155,7 +7155,7 @@
+ indicatorbin > indicator, indicatorbin > mask {
+   min-width: 6px;
+   min-height: 6px;
+-  border-radius: 9999px;
++  border-radius: 0;
+ }
+ 
+ indicatorbin > indicator {
+@@ -7211,7 +7211,7 @@
+ }
+ 
+ preferencesgroup > box button.background-preview-button.toggle, preferencesgroup > box button.background-preview-button.toggle > background-preview {
+-  border-radius: 6px;
++  border-radius: 0;
+ }
+ 
+ preferencesgroup > box button.background-preview-button.toggle:hover {
+@@ -7244,7 +7244,7 @@
+ window.about .main-page .app-version {
+   padding: 3px 18px;
+   color: #89b4fa;
+-  border-radius: 6px;
++  border-radius: 0;
+   margin-top: 3px;
+ }
+ 
